@@ -122,6 +122,9 @@ def check_strings(d, _log):
         else:
             if type(v) is not str and k != 'keep_variables':
                 _log.warning(f'Value of {k}: {v} is not a string')
+            for sus_val in ['X', '<', '>']:
+                if sus_val in str(v):
+                    _log.warning(f"Possible filler/dummy value '{sus_val}' detected in {k}: {v}")
             if not bool(v):
                 _log.error(f'{k} is empty')
     return _log
