@@ -311,6 +311,7 @@ netcdf_variables:
 #     source:  OCR504_Ed1
 #     long_name:    Downwelling irradiance value of the 380 nm wavelength
 #     standard_name: 380nm_downwelling_irradiance
+  average_method: "geometric mean"
 #     units:        W m-2 nm-1
 #     coordinates:   time depth latitude longitude
 #     instrument:    instrument_radiometer
@@ -320,6 +321,7 @@ netcdf_variables:
 #     source:  OCR504_Ed2
 #     long_name:    Downwelling irradiance value of the 490 nm wavelength
 #     standard_name: 490nm_downwelling_irradiance
+  average_method: "geometric mean"
 #     units:        W m-2 nm-1
 #     coordinates:   time depth latitude longitude
 #     instrument:    instrument_radiometer
@@ -329,6 +331,7 @@ netcdf_variables:
 #     source:  OCR504_Ed3
 #     long_name:    Downwelling irradiance value of the 532 nm wavelength
 #     standard_name: 532nm_downwelling_irradiance
+  average_method: "geometric mean"
 #     units:       W m-2 nm-1
 #     coordinates:   time depth latitude longitude
 #     instrument:    instrument_radiometer
@@ -338,6 +341,7 @@ netcdf_variables:
 #     source:  OCR504_Ed4
 #     long_name:    Downwelling PAR (Photosynthetically Active Radiation) in range 400-700 nm
 #     standard_name: downwelling_PAR
+  average_method: "geometric mean"
 #     units:        μE m-2 s-1
 #     coordinates:   time depth latitude longitude
 #     instrument:    instrument_radiometer
