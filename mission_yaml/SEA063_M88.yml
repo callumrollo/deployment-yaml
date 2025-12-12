@@ -56,6 +56,12 @@ glider_devices:
     make_model: RBR legato CTD
     factory_calibrated: 'Yes'
     calibration_date: '2024-02-23'
+  intail:
+    make: intail
+    model: custom
+    serial: '1'
+    long_name: intail
+    make_model: intail
   oxygen:
     make: JFE Advantech
     model: AROD-FT
@@ -103,6 +109,7 @@ netcdf_variables:
   - oxygen_concentration
   - ad2cp_heading
   - downwelling_PAR
+  - intail_full_range
   timebase:
     source: NAV_LATITUDE
   time:
@@ -424,6 +431,27 @@ netcdf_variables:
     source: AROD_FT_LED
     long_name: oxygen sensor LED counts
     standard_name: oxygen_sensor_led_value
+    units: counts
+    coordinates: time depth latitude longitude
+    instrument: instrument_phosphorescence
+    observation_type: measured
+  intail_full_range:
+    source: GPCTD_PRESSURE
+    long_name: intail sensor full range oxygen raw
+    units: counts
+    coordinates: time depth latitude longitude
+    instrument: instrument_phosphorescence
+    observation_type: measured
+  intail_mid_range:
+    source: GPCTD_TEMPERATURE
+    long_name: intail sensor mid range oxygen raw
+    units: counts
+    coordinates: time depth latitude longitude
+    instrument: instrument_phosphorescence
+    observation_type: measured
+  intail_trace_range:
+    source: GPCTD_CONDUCTIVITY
+    long_name: intail sensor trace range oxygen raw
     units: counts
     coordinates: time depth latitude longitude
     instrument: instrument_phosphorescence
