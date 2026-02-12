@@ -1,0 +1,38 @@
+metadata:
+  comment: Altitude set to 2m for the entire mission duration . Zt/zs set to 2m for
+    the entire mission duration. Emergency recovery due to a broken linear actuator.
+    The glider spent about 20h at surface while waiting for recovery. During most
+    of this time, the payload was swithced off and no data was collected
+  project: SAMBA
+platform_devices:
+  AD2CP:
+    make_model: Nortek AD2CP
+    sensor_calibration_date: '2021-02-03'
+    sensor_serial_number: '101589'
+  ctd:
+    make_model: RBR legato CTD
+    sensor_calibration_date: '2021-06-10'
+    sensor_serial_number: '207476'
+  optics:
+    calibration_parameters:
+      Chl_DarkCounts: 48
+      Chl_SF: 0.0073
+      PC_DarkCounts: 44
+      PC_SF: 0.0424
+      SIG_DarkCounts: 46
+      SIG_SF: 1.783e-06
+    make_model: Wetlabs FLBBPC
+    sensor_calibration_date: '2021-03-22'
+    sensor_serial_number: '6754'
+  oxygen:
+    make_model: JFE Advantech AROD_FT
+    sensor_calibration_date: '2020-02-05'
+    sensor_serial_number: 0039
+qc:
+  oxygen_concentration:
+    comment: The absolute values of the oxygen data can be unreliable. The relative
+      variability is confirmed to be valid and no temporal drift exist has been observed.
+      Absolute values may be inaccurate and lower than reference data. Re-calibration
+      of the sensor is required. More information on the history and updates regarding
+      this issue ( https://observations.voiceoftheocean.org/data/updates).
+    value: 4

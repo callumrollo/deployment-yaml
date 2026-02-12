@@ -1,0 +1,28 @@
+metadata:
+  comment: Altitude set to 6m for the entire mission duration. Zt/zs set to 5m for
+    the entire mission duration
+  project: SAMBA
+platform_devices:
+  AD2CP:
+    make_model: Nortek AD2CP
+    sensor_calibration_date: '2021-02-03'
+    sensor_serial_number: '101589'
+  altimeter:
+    sensor_serial_number: '25'
+  ctd:
+    make_model: RBR legato CTD
+    sensor_calibration_date: '2021-03-01'
+    sensor_serial_number: '206523'
+  optics:
+    calibration_parameters:
+      Chl_DarkCounts: 48
+      Chl_SF: 0.0121
+      NTU_DarkCounts: 49
+      NTU_SF: 0.006
+    make_model: Wetlabs FLNTU
+    sensor_calibration_date: '2021-02-01'
+    sensor_serial_number: '6661'
+  oxygen:
+    make_model: JFE Advantech AROD_FT
+    sensor_calibration_date: '2021-01-23'
+    sensor_serial_number: '0044'

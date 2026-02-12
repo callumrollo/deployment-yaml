@@ -1,0 +1,31 @@
+metadata:
+  comment: Glider dove with zt/zs=2 and alt=2 for full mission duration
+  project: SAMBA
+platform_devices:
+  AD2CP:
+    make_model: Nortek AD2CP
+    sensor_calibration_date: '2022-01-11'
+    sensor_serial_number: '103354'
+  ctd:
+    make_model: RBR legato CTD
+    sensor_calibration_date: '2022-05-16'
+    sensor_serial_number: '210555'
+  irradiance:
+    make_model: Biospherical MPE-PAR
+    sensor_calibration_date: '2022-08-11'
+    sensor_serial_number: '2874'
+  optics:
+    calibration_parameters:
+      Chl_DarkCounts: 44
+      Chl_SF: 0.0072
+      PC_DarkCounts: 51
+      PC_SF: 0.0423
+      SIG_DarkCounts: 48
+      SIG_SF: 1.899e-06
+    make_model: Wetlabs FLBBPC
+    sensor_calibration_date: '2022-01-11'
+    sensor_serial_number: '7313'
+  oxygen:
+    make_model: JFE Advantech AROD_FT
+    sensor_calibration_date: '2024-02-15'
+    sensor_serial_number: '0041'

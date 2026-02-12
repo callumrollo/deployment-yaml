@@ -1,0 +1,30 @@
+metadata:
+  comment: Loitering was performed in the afternoons the last days of mission to preserve
+    battery. zt/zs=2 and alt=2 for full mission duration
+  project: SAMBA
+platform_devices:
+  AD2CP:
+    make_model: Nortek AD2CP
+    sensor_calibration_date: '2021-02-03'
+    sensor_serial_number: '101589'
+  ctd:
+    make_model: RBR legato CTD
+    sensor_calibration_date: '2021-06-10'
+    sensor_serial_number: '207476'
+  irradiance:
+    make_model: Biospherical MPE-PAR
+    sensor_calibration_date: '2023-02-21'
+    sensor_serial_number: '2983'
+  optics:
+    calibration_parameters:
+      Chl_DarkCounts: 48
+      Chl_SF: 0.0121
+      NTU_DarkCounts: 49
+      NTU_SF: 0.006
+    make_model: Wetlabs FLNTU
+    sensor_calibration_date: '2021-02-01'
+    sensor_serial_number: '6661'
+  oxygen:
+    make_model: JFE Advantech AROD_FT
+    sensor_calibration_date: '2023-08-11'
+    sensor_serial_number: '0040'

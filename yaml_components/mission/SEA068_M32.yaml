@@ -1,0 +1,27 @@
+metadata:
+  comment: Glider flew with zt/zs=2 and alt=2 for full mission duration
+  project: SAMBA
+platform_devices:
+  AD2CP:
+    make_model: Nortek AD2CP
+    sensor_calibration_date: '2022-07-18'
+    sensor_serial_number: '104646'
+  ctd:
+    make_model: RBR legato CTD
+    sensor_calibration_date: '2022-10-21'
+    sensor_serial_number: '212532'
+  optics:
+    calibration_parameters:
+      CDOM_DarkCounts: 49
+      CDOM_SF: 0.0904
+      Chl_DarkCounts: 49
+      Chl_SF: 0.0121
+      SIG_DarkCounts: 46
+      SIG_SF: 3.145e-06
+    make_model: Wetlabs FLBBCD
+    sensor_calibration_date: '2022-05-10'
+    sensor_serial_number: '7563'
+  oxygen:
+    make_model: JFE Advantech AROD_FT
+    sensor_calibration_date: '2024-02-15'
+    sensor_serial_number: '0071'

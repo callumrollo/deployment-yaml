@@ -1,0 +1,31 @@
+metadata:
+  comment: Glider dove on a faster profile with zt=20 occationaly due to strong currents.
+    The sensor cap was on the oxygen sensor forr the full mission duration, see qc
+  project: SAMBA
+platform_devices:
+  altimeter:
+    sensor_serial_number: '52'
+  ctd:
+    make_model: RBR legato CTD
+    sensor_calibration_date: '2023-06-02'
+    sensor_serial_number: '206613'
+  optics:
+    calibration_parameters:
+      Chl_DarkCounts: 48
+      Chl_SF: 0.0073
+      PC_DarkCounts: 44
+      PC_SF: 0.0424
+      SIG_DarkCounts: 46
+      SIG_SF: 1.783e-06
+    make_model: Wetlabs FLBBPC
+    sensor_calibration_date: '2021-03-22'
+    sensor_serial_number: '6754'
+  oxygen:
+    make_model: JFE Advantech AROD_FT
+    sensor_calibration_date: '2024-01-26'
+    sensor_serial_number: '0050'
+qc:
+  oxygen_concentration:
+    comment: 'Issue with Oxygen sensor: Sensor protective cap was on for full mission
+      duration.'
+    value: 4

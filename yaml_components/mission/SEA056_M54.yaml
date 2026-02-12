@@ -1,0 +1,34 @@
+metadata:
+  comment: Max diving depth set to 60m to avoid sampling in anoxic waters as it damages
+    the methane sensor. Zt/zs set to 2m for the entire mission duration and altitude
+    set to 5m but the glider was flying well above the seabed due to the shallow max
+    diving depth (zb)
+  project: NS_Bornholm
+platform_devices:
+  AD2CP:
+    make_model: Nortek AD2CP
+    sensor_calibration_date: '2022-03-17'
+    sensor_serial_number: '103355'
+  altimeter:
+    sensor_serial_number: '37'
+  ctd:
+    make_model: RBR legato CTD
+    sensor_calibration_date: '2020-07-21'
+    sensor_serial_number: '205046'
+  methane:
+    make_model: Franatech METS
+    sensor_calibration_date: '2022-07-01'
+    sensor_serial_number: '2117'
+  optics:
+    calibration_parameters:
+      Chl_DarkCounts: 48
+      Chl_SF: 0.0121
+      NTU_DarkCounts: 49
+      NTU_SF: 0.0061
+    make_model: Wetlabs FLNTU
+    sensor_calibration_date: '2020-02-06'
+    sensor_serial_number: '6134'
+  oxygen:
+    make_model: JFE Advantech AROD_FT
+    sensor_calibration_date: '2022-03-19'
+    sensor_serial_number: '0050'

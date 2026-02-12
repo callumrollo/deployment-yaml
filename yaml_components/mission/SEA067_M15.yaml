@@ -1,0 +1,36 @@
+metadata:
+  comment: Altitude set to 6m for the entire mission duration. Zt/zs set to 5m for
+    the entire mission duration. The gldier hit the seabed a few times due to ADCP
+    failure. ADCP and irradiance sensor (OCR504) stopped recording dat at C174. Emergency
+    recovery due to water leaks in the dry section of the glider. The raw data could
+    not be recovered and only the subsampled files sent through iriudium are available
+    for this mission
+  project: SAMBA
+platform_devices:
+  AD2CP:
+    make_model: Nortek AD2CP
+    sensor_calibration_date: '2021-05-21'
+    sensor_serial_number: '102882'
+  ctd:
+    make_model: RBR legato CTD
+    sensor_calibration_date: '2021-03-03'
+    sensor_serial_number: '206611'
+  irradiance:
+    make_model: SeaBird OCR504
+    sensor_calibration_date: '2021-03-08'
+    sensor_serial_number: '2197'
+  optics:
+    calibration_parameters:
+      Chl_DarkCounts: 47
+      Chl_SF: 0.0073
+      PC_DarkCounts: 43
+      PC_SF: 0.0422
+      SIG_DarkCounts: 46
+      SIG_SF: 1.8e-06
+    make_model: Wetlabs FLBBPC
+    sensor_calibration_date: '2021-03-22'
+    sensor_serial_number: '6755'
+  oxygen:
+    make_model: RBR coda TODO
+    sensor_calibration_date: '2021-02-26'
+    sensor_serial_number: '206115'

@@ -1,0 +1,36 @@
+metadata:
+  comment: Altitude set to 2m for the entire mission duration . Zt/zs set to 2m for
+    most of the mission but occasionally increased to  20m when the glider struggled
+    with strong currents. The oxygen sensor (JFE AROD-FT) stopped recording data at
+    C541
+  project: SAMBA
+platform_devices:
+  altimeter:
+    sensor_serial_number: '53'
+  ctd:
+    make_model: RBR legato CTD
+    sensor_calibration_date: '2020-07-21'
+    sensor_serial_number: '205047'
+  optics:
+    calibration_parameters:
+      Chl_DarkCounts: 46
+      Chl_SF: 0.0072
+      PC_DarkCounts: 45
+      PC_SF: 0.0386
+      SIG_DarkCounts: 45
+      SIG_SF: 1.722e-06
+    make_model: Wetlabs FLBBPC
+    sensor_calibration_date: '2020-12-22'
+    sensor_serial_number: '6597'
+  oxygen:
+    make_model: JFE Advantech AROD_FT
+    sensor_calibration_date: '2022-11-11'
+    sensor_serial_number: '0070'
+qc:
+  oxygen_concentration:
+    comment: Dissolved oxygen concentration values may be inaccurate. Deterioration
+      of the foil has caused uncorrectable errors and non-linear temporal drift in
+      other missions with this sensor during this timeframe. We have not observed
+      issues in this particular mission, but we recommend caution when using this
+      data. More information on the history and updates regarding this issue ( https://observations.voiceoftheocean.org/data/updates).
+    value: 3

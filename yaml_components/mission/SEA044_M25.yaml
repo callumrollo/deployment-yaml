@@ -1,0 +1,31 @@
+metadata:
+  comment: Issue on first deployment so glider was recovered and redeployed 8 days
+    later with the same mission number. Altitude set to 12m for the entire mission
+    duration. Zt/zs set to 15m for the entire mission duration
+  project: SAMBA
+platform_devices:
+  altimeter:
+    sensor_serial_number: '34'
+  ctd:
+    make_model: RBR legato CTD
+    sensor_calibration_date: '2020-07-21'
+    sensor_serial_number: '205047'
+  irradiance:
+    make_model: SeaBird OCR504
+    sensor_calibration_date: '2020-02-21'
+    sensor_serial_number: '2044'
+  optics:
+    calibration_parameters:
+      CDOM_DarkCounts: 49
+      CDOM_SF: 0.0906
+      Chl_DarkCounts: 48
+      Chl_SF: 0.0121
+      SIG_DarkCounts: 47
+      SIG_SF: 3.095e-06
+    make_model: Wetlabs FLBBCD
+    sensor_calibration_date: '2019-10-30'
+    sensor_serial_number: '5948'
+  oxygen:
+    make_model: JFE Advantech AROD_FT
+    sensor_calibration_date: '2020-02-08'
+    sensor_serial_number: '0041'

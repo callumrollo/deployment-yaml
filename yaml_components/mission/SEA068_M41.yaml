@@ -1,0 +1,80 @@
+metadata:
+  comment: Glider flew on higher bu/bd and increased zt at the end of mission to fight
+    current. Biofouling affecting the wetlabs data (chlorophyll, backscatter, phycocyanin).
+  project: SAMBA
+platform_devices:
+  AD2CP:
+    make_model: Nortek AD2CP
+    sensor_calibration_date: '2022-03-17'
+    sensor_serial_number: '103355'
+  ctd:
+    make_model: RBR legato CTD
+    sensor_calibration_date: '2024-02-23'
+    sensor_serial_number: '206523'
+  irradiance:
+    make_model: Biospherical MPE-PAR
+    sensor_calibration_date: '2023-02-21'
+    sensor_serial_number: '2984'
+  optics:
+    calibration_parameters:
+      Chl_DarkCounts: 46
+      Chl_SF: 0.0073
+      PC_DarkCounts: 47
+      PC_SF: 0.0388
+      SIG_DarkCounts: 47
+      SIG_SF: 1.815e-06
+    make_model: Wetlabs FLBBPC
+    sensor_calibration_date: '2020-12-22'
+    sensor_serial_number: '6598'
+  oxygen:
+    calibration_parameters:
+      A: -12.79867
+      B: 0.001471221
+      C: -2.559432e-08
+      Cp: 0.004
+      D: 5.819505e-13
+      E: -7.142082e-18
+      F: 4.564357e-23
+      c0: 0.002981258
+      c1: 0.0001269313
+      c2: 2.701816e-06
+      d0: 0.0001534826
+      d1: -0.1937578
+      d2: 0.1907084
+      d3: 0.0
+      d4: 0.0
+      e0: 1.0
+    make_model: JFE Advantech AROD_FT
+    sensor_calibration_date: '2023-04-01'
+    sensor_serial_number: 0081
+qc:
+  backscatter_raw:
+    comment: Biofouling on wetlabs FLBBPC
+    end: '2025-06-04'
+    start: '2025-05-26'
+    value: 4
+  backscatter_scaled:
+    comment: Biofouling on wetlabs FLBBPC
+    end: '2025-06-04'
+    start: '2025-05-26'
+    value: 4
+  chlorophyll:
+    comment: Biofouling on wetlabs FLBBPC suspected to also affect chlorophyll
+    end: '2025-06-04'
+    start: '2025-05-26'
+    value: 3
+  chlorophyll_raw:
+    comment: Biofouling on wetlabs FLBBPC suspected to also affect chlorophyll
+    end: '2025-06-04'
+    start: '2025-05-26'
+    value: 3
+  phycocyanin:
+    comment: Biofouling on wetlabs FLBBPC
+    end: '2025-06-04'
+    start: '2025-05-26'
+    value: 4
+  phycocyanin_raw:
+    comment: Biofouling on wetlabs FLBBPC
+    end: '2025-06-04'
+    start: '2025-05-26'
+    value: 4

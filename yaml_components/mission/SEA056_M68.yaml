@@ -1,0 +1,29 @@
+metadata:
+  comment: Altitude set to 2m for the entire mission duration apart from occasional
+    higher values in the deep section of the transect. Zt/zs set to 2m for the entire
+    mission duration. Glider hit the seabed multiple dives as the ADCP failed to detect
+    the seabed. The bottom depth (zb) was reduced occasionally to prevent the glider
+    from hitting the seabed
+  project: SAMBA
+platform_devices:
+  AD2CP:
+    make_model: Nortek AD2CP
+    sensor_calibration_date: '2023-10-19'
+    sensor_serial_number: '103356'
+  ctd:
+    make_model: RBR legato CTD
+    sensor_calibration_date: '2023-06-14'
+    sensor_serial_number: '230629'
+  optics:
+    calibration_parameters:
+      Chl_DarkCounts: 48
+      Chl_SF: 0.0121
+      NTU_DarkCounts: 49
+      NTU_SF: 0.0061
+    make_model: Wetlabs FLNTU
+    sensor_calibration_date: '2020-02-06'
+    sensor_serial_number: '6134'
+  oxygen:
+    make_model: JFE Advantech AROD_FT
+    sensor_calibration_date: '2023-08-26'
+    sensor_serial_number: '0067'

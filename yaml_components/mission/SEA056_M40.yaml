@@ -1,0 +1,30 @@
+metadata:
+  comment: Altitude set to 6m for the entire mission duration. Zt/zs set to 5m for
+    the entire mission duration. The glider was set to drift at depth for the last
+    week of the mission with payload switched off. No data is avaialble from this
+    period
+  project: SAMBA
+platform_devices:
+  AD2CP:
+    make_model: Nortek AD2CP
+    sensor_calibration_date: '2020-01-24'
+    sensor_serial_number: '101593'
+  altimeter:
+    sensor_serial_number: '37'
+  ctd:
+    make_model: RBR legato CTD
+    sensor_calibration_date: '2020-07-21'
+    sensor_serial_number: '205046'
+  optics:
+    calibration_parameters:
+      Chl_DarkCounts: 48
+      Chl_SF: 0.0121
+      NTU_DarkCounts: 49
+      NTU_SF: 0.0061
+    make_model: Wetlabs FLNTU
+    sensor_calibration_date: '2020-02-06'
+    sensor_serial_number: '6134'
+  oxygen:
+    make_model: JFE Advantech AROD_FT
+    sensor_calibration_date: '2020-02-05'
+    sensor_serial_number: 0038

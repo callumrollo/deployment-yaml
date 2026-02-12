@@ -1,0 +1,58 @@
+metadata:
+  comment: Due to occasionally failing bottomtracking, glider flew on a safe zb for
+    shorter periods. Apart from that zt/zs and alt=2 for full mission duration.
+  project: SAMBA
+platform_devices:
+  AD2CP:
+    make_model: Nortek AD2CP
+    sensor_calibration_date: '2023-08-16'
+    sensor_serial_number: '104648'
+  ctd:
+    make_model: RBR legato CTD
+    sensor_calibration_date: '2023-09-05'
+    sensor_serial_number: '205046'
+  irradiance:
+    make_model: Biospherical MPE-PAR
+    sensor_calibration_date: '2024-05-02'
+    sensor_serial_number: '3197'
+  optics:
+    calibration_parameters:
+      CDOM_DarkCounts: 47
+      CDOM_SF: 0.0908
+      Chl_DarkCounts: 47
+      Chl_SF: 0.0121
+      SIG_DarkCounts: 48
+      SIG_SF: 3.115e-06
+    make_model: Wetlabs FLBBCD
+    sensor_calibration_date: '2023-04-27'
+    sensor_serial_number: '8201'
+  oxygen:
+    calibration_parameters:
+      A: -12.9157
+      B: 0.001475098
+      C: -2.62001e-08
+      Cp: 0.004
+      D: 6.117645e-13
+      E: -7.783219e-18
+      F: 5.064287e-23
+      c0: 0.002911369
+      c1: 0.0001243058
+      c2: 2.561515e-06
+      d0: 6.707286e-05
+      d1: -0.181252
+      d2: 0.1963972
+      d3: 0.0
+      d4: 0.0
+      e0: 1.0
+    make_model: JFE Advantech AROD_FT
+    sensor_calibration_date: '2023-08-26'
+    sensor_serial_number: '0070'
+qc:
+  cdom:
+    comment: High values of CDOM raw counts. The cause of the issue is still unknown.
+      The relative variability may be intact but absolute values are unreliable.
+    value: 4
+  cdom_raw:
+    comment: High values of CDOM raw counts. The cause of the issue is still unknown.
+      The relative variability may be intact but absolute values are unreliable.
+    value: 4

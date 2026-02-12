@@ -1,0 +1,37 @@
+metadata:
+  comment: Altitude set to 2m for the entire mission duration. Zt/zs set to 2m for
+    the entire mission duration. Due to iridium communication issues, the glider spend
+    about 17h at surface drifting and after that the glider was recovered
+  project: SAMBA
+platform_devices:
+  AD2CP:
+    make_model: Nortek AD2CP
+    sensor_calibration_date: '2021-02-03'
+    sensor_serial_number: '101589'
+  ctd:
+    make_model: RBR legato CTD
+    sensor_calibration_date: '2021-06-10'
+    sensor_serial_number: '207476'
+  optics:
+    calibration_parameters:
+      Chl_DarkCounts: 48
+      Chl_SF: 0.0073
+      PC_DarkCounts: 44
+      PC_SF: 0.0424
+      SIG_DarkCounts: 46
+      SIG_SF: 1.783e-06
+    make_model: Wetlabs FLBBPC
+    sensor_calibration_date: '2021-03-22'
+    sensor_serial_number: '6754'
+  oxygen:
+    make_model: JFE Advantech AROD_FT
+    sensor_calibration_date: '2022-11-26'
+    sensor_serial_number: '0071'
+qc:
+  oxygen_concentration:
+    comment: Dissolved oxygen concentration values may be inaccurate. Deterioration
+      of the foil has caused uncorrectable errors and non-linear temporal drift in
+      other missions with this sensor during this timeframe. We have not observed
+      issues in this particular mission, but we recommend caution when using this
+      data. More information on the history and updates regarding this issue ( https://observations.voiceoftheocean.org/data/updates).
+    value: 3

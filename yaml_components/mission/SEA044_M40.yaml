@@ -1,0 +1,34 @@
+metadata:
+  comment: Altitude set to 6m for the entire mission duration. Zt/zs set to 5m for
+    the entire mission duration. Glider hit the seabed multiple times due to issues
+    with the altimeter and after that the maximum diving depth was reduced to avoid
+    possible collisions with the seabed. The glider maximum diving depth was set to
+    65 or 75m depending on the section of the transect, therefore the glider often
+    turned back well before 6m from the seabed
+  project: SAMBA
+platform_devices:
+  altimeter:
+    sensor_serial_number: '34'
+  ctd:
+    make_model: RBR legato CTD
+    sensor_calibration_date: '2020-07-21'
+    sensor_serial_number: '205047'
+  irradiance:
+    make_model: SeaBird OCR504
+    sensor_calibration_date: '2020-02-21'
+    sensor_serial_number: '2044'
+  optics:
+    calibration_parameters:
+      Chl_DarkCounts: 46
+      Chl_SF: 0.0072
+      PC_DarkCounts: 45
+      PC_SF: 0.0386
+      SIG_DarkCounts: 45
+      SIG_SF: 1.722e-06
+    make_model: Wetlabs FLBBPC
+    sensor_calibration_date: '2020-12-22'
+    sensor_serial_number: '6597'
+  oxygen:
+    make_model: JFE Advantech AROD_FT
+    sensor_calibration_date: '2020-02-08'
+    sensor_serial_number: '0041'

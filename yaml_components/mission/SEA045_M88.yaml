@@ -1,0 +1,25 @@
+metadata:
+  comment: Emergency recovery 2 days after deployment due to linear issues
+  project: SAMBA
+platform_devices:
+  AD2CP:
+    make_model: Nortek AD2CP
+    sensor_calibration_date: '2023-09-04'
+    sensor_serial_number: '105526'
+  ctd:
+    make_model: RBR legato CTD
+    sensor_calibration_date: '2024-02-23'
+    sensor_serial_number: '206523'
+  optics:
+    calibration_parameters:
+      Chl_DarkCounts: 48
+      Chl_SF: 0.0121
+      NTU_DarkCounts: 50
+      NTU_SF: 0.0061
+    make_model: Wetlabs FLNTU
+    sensor_calibration_date: '2020-03-02'
+    sensor_serial_number: '6170'
+  oxygen:
+    make_model: JFE Advantech AROD_FT
+    sensor_calibration_date: '2023-04-01'
+    sensor_serial_number: 0081

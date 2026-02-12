@@ -1,0 +1,28 @@
+metadata:
+  comment: Altitude set to 2m for the entire mission duration . Zt/zs set to 2m for
+    the entire mission duration. Glider hit the seabed at C191
+  project: SAMBA
+platform_devices:
+  AD2CP:
+    make_model: Nortek AD2CP
+    sensor_calibration_date: '2022-07-18'
+    sensor_serial_number: '104649'
+  ctd:
+    make_model: RBR legato CTD
+    sensor_calibration_date: '2022-10-21'
+    sensor_serial_number: '212534'
+  optics:
+    calibration_parameters:
+      CDOM_DarkCounts: 50
+      CDOM_SF: 0.0909
+      Chl_DarkCounts: 47
+      Chl_SF: 0.0121
+      SIG_DarkCounts: 50
+      SIG_SF: 3.108e-06
+    make_model: Wetlabs FLBBCD
+    sensor_calibration_date: '2022-06-21'
+    sensor_serial_number: '7619'
+  oxygen:
+    make_model: JFE Advantech AROD_FT
+    sensor_calibration_date: '2023-04-01'
+    sensor_serial_number: 0081

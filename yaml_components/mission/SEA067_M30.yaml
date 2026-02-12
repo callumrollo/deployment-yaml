@@ -1,0 +1,38 @@
+metadata:
+  comment: Altitude set to 5m for the entire mission duration. Zt/zs set to 2m for
+    the entire mission duration. Glider was lost in an underwater cave and recovered
+    a month later. This is why there is a large gap in the dataset in this area
+  project: CABLE
+platform_devices:
+  AD2CP:
+    make_model: Nortek AD2CP
+    sensor_calibration_date: '2022-01-11'
+    sensor_serial_number: '103354'
+  ctd:
+    make_model: RBR legato CTD
+    sensor_calibration_date: '2021-03-07'
+    sensor_serial_number: '206612'
+  optics:
+    calibration_parameters:
+      Chl_DarkCounts: 44
+      Chl_SF: 0.0072
+      PC_DarkCounts: 51
+      PC_SF: 0.0423
+      SIG_DarkCounts: 48
+      SIG_SF: 1.899e-06
+    make_model: Wetlabs FLBBPC
+    sensor_calibration_date: '2022-01-11'
+    sensor_serial_number: '7313'
+  oxygen:
+    make_model: RBR coda TODO
+    sensor_calibration_date: '2021-02-26'
+    sensor_serial_number: '206115'
+qc:
+  oxygen_concentration:
+    comment: "Dissolved oxygen concentration values are inaccurate. Deterioration\
+      \ of the foil has caused errors and temporal drift in other missions with this\
+      \ sensor during this timeframe. We do not observe a temporal drift in this particular\
+      \ mission, but the sensor does observe the expected 0 \u03BCmol L<sup>-1</sup>\
+      \ oxygen concentration in anoxic waters. More information on the history and\
+      \ updates regarding this issue (https://observations.voiceoftheocean.org/data/updates)."
+    value: 4

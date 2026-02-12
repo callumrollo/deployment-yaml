@@ -1,0 +1,26 @@
+metadata:
+  comment: Altitude set to 10m for the entire mission duration . Zt/zs set to 2m for
+    the entire mission duration
+  project: SAMBA
+platform_devices:
+  altimeter:
+    sensor_serial_number: '33'
+  ctd:
+    make_model: RBR legato CTD
+    sensor_calibration_date: '2020-06-22'
+    sensor_serial_number: '204958'
+  optics:
+    calibration_parameters:
+      Chl_DarkCounts: 46
+      Chl_SF: 0.0073
+      PC_DarkCounts: 47
+      PC_SF: 0.0388
+      SIG_DarkCounts: 47
+      SIG_SF: 1.815e-06
+    make_model: Wetlabs FLBBPC
+    sensor_calibration_date: '2020-12-22'
+    sensor_serial_number: '6598'
+  oxygen:
+    make_model: JFE Advantech AROD_FT
+    sensor_calibration_date: '2020-02-05'
+    sensor_serial_number: '0040'

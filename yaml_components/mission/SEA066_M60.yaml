@@ -1,0 +1,29 @@
+metadata:
+  comment: Voltage drops throughout mission resulted in a few 1 Alarms. Navigation
+    pressure sensor (not legato) showing negative values occasionally at the surface.
+    zt/zs=2 and alt=2 throughout the full mission.
+  project: SAMBA
+platform_devices:
+  AD2CP:
+    make_model: Nortek AD2CP
+    sensor_calibration_date: '2022-03-15'
+    sensor_serial_number: '103360'
+  ctd:
+    make_model: RBR legato CTD
+    sensor_calibration_date: '2023-08-02'
+    sensor_serial_number: '205047'
+  optics:
+    calibration_parameters:
+      CDOM_DarkCounts: 49
+      CDOM_SF: 0.0904
+      Chl_DarkCounts: 49
+      Chl_SF: 0.0121
+      SIG_DarkCounts: 46
+      SIG_SF: 3.145e-06
+    make_model: Wetlabs FLBBPC
+    sensor_calibration_date: '2022-05-10'
+    sensor_serial_number: '7564'
+  oxygen:
+    make_model: JFE Advantech AROD_FT
+    sensor_calibration_date: '2023-08-26'
+    sensor_serial_number: '0067'

@@ -1,0 +1,31 @@
+metadata:
+  comment: Calibration date for OCR504 uncertain
+  project: QUICCHE
+platform_devices:
+  ctd:
+    make_model: RBR legato CTD
+    sensor_calibration_date: '2021-03-17'
+    sensor_serial_number: '206611'
+  irradiance:
+    make_model: SeaBird OCR504
+    sensor_calibration_date: '2021-03-08'
+    sensor_serial_number: '2103'
+  nitrate:
+    make_model: Seabird Deep SUNA
+    sensor_calibration_date: '2019-05-20'
+    sensor_serial_number: NTR-1293
+  optics:
+    calibration_parameters:
+      CDOM_DarkCounts: 50
+      CDOM_SF: 0.0906
+      Chl_DarkCounts: 49
+      Chl_SF: 0.0121
+      SIG_DarkCounts: 49
+      SIG_SF: 3.064e-06
+    make_model: Wetlabs FLBBCD
+    sensor_calibration_date: '2021-06-17'
+    sensor_serial_number: '6908'
+  oxygen:
+    make_model: RBR coda TODO
+    sensor_calibration_date: '2021-03-17'
+    sensor_serial_number: '206112'

@@ -1,0 +1,49 @@
+metadata:
+  comment: Glider did some short period loiterning towards the end of the mission
+    to preserve battery. Flew on zs/zt/alt=2 for the full mission duration.
+  project: SAMBA
+platform_devices:
+  AD2CP:
+    make_model: Nortek AD2CP
+    sensor_calibration_date: '2022-01-11'
+    sensor_serial_number: '103354'
+  ctd:
+    make_model: RBR legato CTD
+    sensor_calibration_date: '2022-05-16'
+    sensor_serial_number: '210555'
+  irradiance:
+    make_model: Biospherical MPE-PAR
+    sensor_calibration_date: '2022-08-11'
+    sensor_serial_number: '2874'
+  optics:
+    calibration_parameters:
+      Chl_DarkCounts: 44
+      Chl_SF: 0.0072
+      PC_DarkCounts: 51
+      PC_SF: 0.0423
+      SIG_DarkCounts: 48
+      SIG_SF: 1.899e-06
+    make_model: Wetlabs FLBBPC
+    sensor_calibration_date: '2022-01-11'
+    sensor_serial_number: '7313'
+  oxygen:
+    calibration_parameters:
+      A: -12.7743
+      B: 0.00147517
+      C: -2.594112e-08
+      Cp: 0.0039
+      D: 5.954839e-13
+      E: -7.392508e-18
+      F: 4.738719e-23
+      c0: 0.002973652
+      c1: 0.0001255534
+      c2: 2.89126e-06
+      d0: 0.0001817772
+      d1: -0.1665615
+      d2: 0.1915802
+      d3: 0.0
+      d4: 0.0
+      e0: 1.0
+    make_model: JFE Advantech AROD_FT
+    sensor_calibration_date: '2024-02-15'
+    sensor_serial_number: '0041'

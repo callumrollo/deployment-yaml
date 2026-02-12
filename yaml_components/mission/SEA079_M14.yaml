@@ -1,0 +1,39 @@
+metadata:
+  comment: Altitude set to 2m for the entire mission duration . Zt/zs set to 2m for
+    the entire mission duration
+  project: SAMBA
+platform_devices:
+  AD2CP:
+    make_model: Nortek AD2CP
+    sensor_calibration_date: '2022-07-18'
+    sensor_serial_number: '104649'
+  ctd:
+    make_model: RBR legato CTD
+    sensor_calibration_date: '2022-10-21'
+    sensor_serial_number: '212534'
+  optics:
+    calibration_parameters:
+      CDOM_DarkCounts: 50
+      CDOM_SF: 0.0909
+      Chl_DarkCounts: 47
+      Chl_SF: 0.0121
+      SIG_DarkCounts: 50
+      SIG_SF: 3.108e-06
+    make_model: Wetlabs FLBBCD
+    sensor_calibration_date: '2022-06-21'
+    sensor_serial_number: '7619'
+  oxygen:
+    make_model: JFE Advantech AROD_FT
+    sensor_calibration_date: '2022-11-26'
+    sensor_serial_number: '0071'
+qc:
+  oxygen_concentration:
+    comment: "Following issues with the oxygen sensor, a 2-point calibration has been\
+      \ performed on date {2023-09-04}. The values at 0 and 100 % saturation are accurate.\
+      \ Absolute Values between these two extremes may be inaccurate. The relative\
+      \ variability is confirmed to be valid and no temporal drift occurs. During\
+      \ tests values that can be outside the manufacturer acceptance range have been\
+      \ observed when compared to the output from a reference sensor. This issue is\
+      \ particularly evident around 100\u03BCmol/l. More information on the history\
+      \ and updates regarding this issue (https://observations.voiceoftheocean.org/data/updates)."
+    value: 4

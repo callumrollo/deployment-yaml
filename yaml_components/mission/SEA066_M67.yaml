@@ -1,0 +1,58 @@
+metadata:
+  comment: Glider flew with zt/zs=2 and alt=2 for full mission duration. Vertical
+    speed was increased towards the end of the mission to reach recovery waypoint
+    in time.  Tridente phycocyanin channel values are suspect. The cause is under
+    investigation and appears to be due to bad calibration https://observations.voiceoftheocean.org/static/img/reports/Quality_Issue_5_tridente_phycocyanin.pdf
+  project: SAMBA
+platform_devices:
+  AD2CP:
+    make_model: Nortek AD2CP
+    sensor_calibration_date: '2022-03-15'
+    sensor_serial_number: '103360'
+  ctd:
+    make_model: RBR legato CTD
+    sensor_calibration_date: '2021-03-01'
+    sensor_serial_number: '206610'
+  irradiance:
+    make_model: Biospherical MPE-PAR
+    sensor_calibration_date: '2023-02-21'
+    sensor_serial_number: '2983'
+  optics:
+    calibration_parameters:
+      Chl_C0: -0.73894304
+      Chl_C1: 2.5235072e06
+      Chl_C2: 0.10331017
+      PC_C0: -1.0925524
+      PC_C1: 2.9347115e06
+      PC_C2: 1.0
+      backscatter_C0: 9.990388e-07
+      backscatter_C1: 12.705978
+    make_model: RBR Tridente
+    sensor_calibration_date: '2025-06-25'
+    sensor_serial_number: '238739'
+  oxygen:
+    calibration_parameters:
+      A: -12.88162
+      B: 0.001467866
+      C: -2.550103e-08
+      Cp: 0.004
+      D: 5.835115e-13
+      E: -7.257766e-18
+      F: 4.697937e-23
+      c0: 0.003092823
+      c1: 0.000132935
+      c2: 2.414648e-06
+      d0: -0.0001738649
+      d1: -0.1929757
+      d2: 0.1925271
+      d3: 0.0
+      d4: 0.0
+      e0: 1.0
+    make_model: JFE Advantech AROD_FT
+    sensor_calibration_date: '2023-08-26'
+    sensor_serial_number: '0067'
+qc:
+  phycocyanin:
+    comment: Tridente phycocyanin channel values are suspect. The cause is under investigation
+      and appears to be due to bad calibration https://observations.voiceoftheocean.org/static/img/reports/Quality_Issue_5_tridente_phycocyanin.pdf
+    value: 4

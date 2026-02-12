@@ -1,0 +1,34 @@
+metadata:
+  comment: Part of PhycoGlider mission, deployed with Legato Tridente sensor. Performed
+    virtual mooring at BY38 during the 18/7-24 for calibration with R/V Svea. In connection
+    to that bottom tracking failed during dives 612 and 613 and following two dives
+    went to 100 m. Apart from that zt/zs=2 and alt=2 for full mission duration.
+  project: PHYCOGLIDER
+platform_devices:
+  AD2CP:
+    make_model: Nortek AD2CP
+    sensor_calibration_date: '2022-03-17'
+    sensor_serial_number: '103355'
+  ctd:
+    make_model: RBR legato CTD
+    sensor_calibration_date: '2021-03-17'
+    sensor_serial_number: '206612'
+  irradiance:
+    make_model: Biospherical MPE-PAR
+    sensor_calibration_date: '2023-02-21'
+    sensor_serial_number: '2984'
+  optics:
+    calibration_parameters:
+      Chl_DarkCounts: 46
+      Chl_SF: 0.0073
+      PC_DarkCounts: 47
+      PC_SF: 0.0388
+      SIG_DarkCounts: 47
+      SIG_SF: 1.815e-06
+    make_model: Wetlabs FLBBPC
+    sensor_calibration_date: '2020-12-22'
+    sensor_serial_number: '6598'
+  oxygen:
+    make_model: JFE Advantech AROD_FT
+    sensor_calibration_date: '2020-02-05'
+    sensor_serial_number: 0039

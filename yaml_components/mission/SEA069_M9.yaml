@@ -1,0 +1,39 @@
+metadata:
+  comment: Altitude set to 5m for the entire mission duration. Zt/zs set to 2m for
+    the entire mission duration
+  project: gotland-trials
+platform_devices:
+  ctd:
+    make_model: RBR legato CTD
+    sensor_calibration_date: '2021-03-04'
+    sensor_serial_number: '206613'
+  optics:
+    calibration_parameters:
+      Chl_DarkCounts: 47
+      Chl_SF: 0.0073
+      PC_DarkCounts: 42
+      PC_SF: 0.0424
+      SIG_DarkCounts: 46
+      SIG_SF: 1.789e-06
+    make_model: Wetlabs FLBBPC
+    sensor_calibration_date: '2021-03-22'
+    sensor_serial_number: '6756'
+  optics_nanoflu:
+    calibration_parameters:
+      PC_DarkCounts: 0.07903
+      PC_SF: 702.1
+    make_model: TriOS NANOFLU
+    sensor_calibration_date: '2021-05-20'
+    sensor_serial_number: D54D
+  oxygen:
+    make_model: RBR coda TODO
+    sensor_calibration_date: '2022-07-12'
+    sensor_serial_number: '206116'
+qc:
+  oxygen_concentration:
+    comment: Deterioration of the foil has caused errors in the dissolved oxygen concentration.
+      Values are observed to be substantially higher than the reference CTD cast at
+      deployment. There is an apparent temporal decrease in dissolved oxygen concentration
+      throughout the mission. More information on the history and updates regarding
+      this issue (https://observations.voiceoftheocean.org/data/updates).
+    value: 4
