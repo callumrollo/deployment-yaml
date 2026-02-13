@@ -49,3 +49,49 @@ platform_devices:
     make_model: Rockland Scientific MR1000G-RDL
     sensor_calibration_date: '2024-03-04'
     sensor_serial_number: 0496
+variables:
+  ad2cp_beam1_cell_number1: AD2CP_V1_CN1
+  ad2cp_beam2_cell_number1: AD2CP_V2_CN1
+  ad2cp_beam3_cell_number1: AD2CP_V3_CN1
+  ad2cp_beam4_cell_number1: AD2CP_V4_CN1
+  ad2cp_heading: AD2CP_HEADING
+  ad2cp_pitch: AD2CP_PITCH
+  ad2cp_pressure: AD2CP_PRESSURE
+  ad2cp_roll: AD2CP_ROLL
+  ad2cp_time: AD2CP_TIME
+  altimeter: Altitude
+  angular_cmd: AngCmd
+  angular_pos: AngPos
+  backscatter: TRIDENTE_BACKSCATTER
+  ballast_cmd: BallastCmd
+  ballast_pos: BallastPos
+  chlorophyll: TRIDENTE_CHLOROPHYLL
+  conductivity: LEGATO_CONDUCTIVITY
+  dead_reckoning: DeadReckoning
+  declination: Declination
+  desired_heading: DesiredH
+  dive_num: fnum
+  fdom: TRIDENTE_FDOM
+  heading: Heading
+  internal_pressure: Pa
+  internal_temperature: Temperature
+  latitude: NAV_LATITUDE
+  linear_cmd: LinCmd
+  linear_pos: LinPos
+  longitude: NAV_LONGITUDE
+  nav_resource: NAV_RESOURCE
+  nav_state: NAV_RESOURCE
+  oxygen_ad_counts: AROD_FT_DO_AN
+  oxygen_concentration: AROD_FT_DO
+  oxygen_led_counts: AROD_FT_LED
+  pitch: Pitch
+  pressure: LEGATO_PRESSURE
+  roll: Roll
+  salinity: LEGATO_SALINITY
+  security_level: SecurityLevel
+  temperature: LEGATO_TEMPERATURE
+  temperature_oxygen: AROD_FT_TEMP
+  time: time
+  tke_dissipation_shear_1: MR1000G-RDL_LOG10_EPS1
+  tke_dissipation_shear_2: MR1000G-RDL_LOG10_EPS1
+  voltage: Voltage

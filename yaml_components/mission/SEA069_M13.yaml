@@ -37,3 +37,42 @@ qc:
       mission, but we recommend caution when using this data. More information on
       the history and updates regarding this issue (https://observations.voiceoftheocean.org/data/updates).
     value: 4
+variables:
+  altimeter: Altitude
+  angular_cmd: AngCmd
+  angular_pos: AngPos
+  backscatter_raw: FLBBPC_BB_700_COUNT
+  backscatter_scaled: FLBBPC_BB_700_SCALED
+  ballast_cmd: BallastCmd
+  ballast_pos: BallastPos
+  chlorophyll: FLBBPC_CHL_SCALED
+  chlorophyll_raw: FLBBPC_CHL_COUNT
+  conductivity: LEGATO_CONDUCTIVITY
+  dead_reckoning: DeadReckoning
+  declination: Declination
+  desired_heading: DesiredH
+  dive_num: fnum
+  heading: Heading
+  internal_pressure: Pa
+  internal_temperature: Temperature
+  latitude: NAV_LATITUDE
+  linear_cmd: LinCmd
+  linear_pos: LinPos
+  longitude: NAV_LONGITUDE
+  nanoflu_temperature: NANOFLU_TEMPERATURE
+  nav_resource: NAV_RESOURCE
+  nav_state: NAV_RESOURCE
+  oxygen_concentration: LEGATO_CODA_DO
+  oxygen_phase: LEGATO_CODA_CORR_PHASE
+  phycocyanin: FLBBPC_PC_SCALED
+  phycocyanin_nanoflu: NANOFLU_CONCENTRATION
+  phycocyanin_raw: FLBBPC_PC_COUNT
+  pitch: Pitch
+  pressure: LEGATO_PRESSURE
+  roll: Roll
+  salinity: LEGATO_SALINITY
+  security_level: SecurityLevel
+  temperature: LEGATO_TEMPERATURE
+  temperature_oxygen: LEGATO_CODA_TEMPERATURE
+  time: time
+  voltage: Voltage

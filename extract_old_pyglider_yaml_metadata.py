@@ -63,9 +63,16 @@ def main():
         mission['platform_devices'] = og1_sensors
         if 'qc' in deployment.keys():
             mission['qc'] = deployment['qc']
+        variables = {}
+        for var_name, ddict in deployment['netcdf_variables'].items():
+            if var_name in ['keep_variables', 'timebase']:
+                continue
+            variables[var_name] = ddict['source']
+        mission['variables'] = variables
+
 
         with open(Path('yaml_components') / 'mission' / f'{mission_id}.yaml', 'w') as fout:
-            yaml.dump(mission, fout)
+            yaml.dump(mission, fout, allow_unicode=True)
 
 if __name__ == '__main__':
     main()

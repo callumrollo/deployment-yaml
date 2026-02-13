@@ -54,3 +54,49 @@ qc:
     comment: Tridente phycocyanin channel values are suspect. The cause is under investigation
       and appears to be due to bad calibration https://observations.voiceoftheocean.org/static/img/reports/Quality_Issue_5_tridente_phycocyanin.pdf
     value: 4
+variables:
+  ad2cp_beam1_cell_number2: AD2CP_V1_CN2
+  ad2cp_beam2_cell_number2: AD2CP_V2_CN2
+  ad2cp_beam3_cell_number2: AD2CP_V3_CN2
+  ad2cp_beam4_cell_number2: AD2CP_V4_CN2
+  ad2cp_heading: AD2CP_HEADING
+  ad2cp_pitch: AD2CP_PITCH
+  ad2cp_pressure: AD2CP_PRESSURE
+  ad2cp_roll: AD2CP_ROLL
+  ad2cp_time: AD2CP_TIME
+  altimeter: Altitude
+  angular_cmd: AngCmd
+  angular_pos: AngPos
+  backscatter: TRIDENTE_BACKSCATTER
+  ballast_cmd: BallastCmd
+  ballast_pos: BallastPos
+  chlorophyll: TRIDENTE_CHLOROPHYLL
+  conductivity: LEGATO_CONDUCTIVITY
+  dead_reckoning: DeadReckoning
+  declination: Declination
+  desired_heading: DesiredH
+  dive_num: fnum
+  downwelling_PAR: MPE-PAR_IRRADIANCE
+  heading: Heading
+  internal_pressure: Pa
+  internal_temperature: Temperature
+  internal_temperature_PAR: MPE-PAR_TEMPERATURE
+  latitude: NAV_LATITUDE
+  linear_cmd: LinCmd
+  linear_pos: LinPos
+  longitude: NAV_LONGITUDE
+  nav_resource: NAV_RESOURCE
+  nav_state: NAV_RESOURCE
+  oxygen_ad_counts: AROD_FT_DO_AN
+  oxygen_concentration: AROD_FT_DO
+  oxygen_led_counts: AROD_FT_LED
+  phycocyanin: TRIDENTE_PHYCOCYANIN
+  pitch: Pitch
+  pressure: LEGATO_PRESSURE
+  roll: Roll
+  salinity: LEGATO_SALINITY
+  security_level: SecurityLevel
+  temperature: LEGATO_TEMPERATURE
+  temperature_oxygen: AROD_FT_TEMP
+  time: time
+  voltage: Voltage
