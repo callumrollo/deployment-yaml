@@ -7,19 +7,19 @@ with open(Path("/home/callum/Documents/community/ocean-gliders-format-vocabulari
 sensor_model_conversion = {
     'Nortek AD2CP': 'Nortek Glider1000 AD2CP Acoustic Doppler Current Profiler',
     'Biospherical MPE-PAR': 'Biospherical Instruments PAR sensor (unspecified model)',
-    'hello': 'Franatech METS Methane Sensor',
+    'Franatech METS': 'Franatech METS Methane Sensor',
     'JFE Advantech AROD_FT': 'JFE Advantech Rinko FT ARO-FT oxygen sensor',
-    'hello': 'Nortek Glider1000 AD2CP Acoustic Doppler Current Profiler',
-    'hello': 'RBR Coda T.ODO Temperature and Dissolved Oxygen Sensor',
+    'RBR coda TODO': 'RBR Coda T.ODO Temperature and Dissolved Oxygen Sensor',
     'RBR legato CTD': 'RBR Legato3 CTD',
-    'hello': 'RBR tridente scattering fluorescence sensor',
-    'hello': 'Rockland Scientific MicroRider-1000 turbulence microstructure profiler',
-    'hello': 'Satlantic {Sea-Bird} OCR-504 multispectral radiometer',
-    'hello': 'Satlantic {Sea-Bird} Submersible Ultraviolet Nitrate Analyser V2 (SUNA V2) nutrient analyser series',
-    'hello': 'Sea-Bird Slocum Glider Payload {GPCTD} CTD',
-    'hello': 'WET Labs {Sea-Bird WETLabs} ECO Puck FLNTU-SLC fluorescence turbidity sensor',
+    'RBR Tridente': 'RBR tridente scattering fluorescence sensor',
+    'Rockland Scientific MR1000G-RDL': 'Rockland Scientific MicroRider-1000G turbulence microstructure profiler',
+    'SeaBird OCR504': 'Satlantic {Sea-Bird} OCR-504 multispectral radiometer',
+    'Seabird Deep SUNA': 'Satlantic {Sea-Bird} Submersible Ultraviolet Nitrate Analyser V2 (SUNA V2) nutrient analyser series',
+    'Seabird SlocumCTD': 'Sea-Bird Slocum Glider Payload {GPCTD} CTD',
+    'Wetlabs FLNTU': 'WET Labs {Sea-Bird WETLabs} ECO Puck FLNTU-SLC fluorescence turbidity sensor',
     'Wetlabs FLBBPC': 'WET Labs {Sea-Bird WETLabs} ECO Puck Triplet FLBBPC scattering fluorescence sensor',
-    'hello': 'WET Labs {Sea-Bird WETLabs} ECO Puck Triplet FLBBCD-SLC scattering fluorescence sensor',
+    'Wetlabs FLBBPE': 'WET Labs {Sea-Bird WETLabs} ECO Puck Triplet FLBBPC scattering fluorescence sensor',
+    'Wetlabs FLBBCD': 'WET Labs {Sea-Bird WETLabs} ECO Puck Triplet FLBBCD-SLC scattering fluorescence sensor',
     'hello': 'WET Labs {Sea-Bird WETLabs} SeaOWL UV-A Sea Oil-in-Water Locator',
 }
 
@@ -27,9 +27,13 @@ sensor_model_conversion = {
 def convert_devices(devices):
     og1_devices = {}
     for name, device in devices.items():
+        if name == 'altimeter':
+            continue
+        if 'NANOFLU' in device['make_model']:
+            continue
         sensor_model = sensor_model_conversion[device['make_model']]
         sensor_dict = sensors[sensor_model]
-        
+
         sensor_type_cf = sensor_dict['sensor_type'].upper().replace(' ', '_').replace('-', '_')
         serial = device['sensor_serial_number']
         sensor_dict['sensor_serial_number'] = serial
@@ -51,24 +55,35 @@ sensor_variables = {
         'LONGITUDE': 'NAV_LONGITUDE',
         'NAV_RESOURCE': 'NAV_RESOURCE',
         'DIVE_NUMBER': 'fnum',
-
+        # lots more here obvs
     },
-    'RBR Legato3 CTD': {
+    'RBR legato CTD': {
         'PRES': 'LEGATO_PRESSURE',
         'TEMP': 'LEGATO_TEMPERATURE',
         'CNDC': 'LEGATO_CONDUCTIVITY',
     },
-    'JFE Advantech Rinko FT ARO-FT oxygen sensor': {
+    'Seabird SlocumCTD': {
+        'PRES': 'GPCTD_PRESSURE',
+        'TEMP': 'GPCTD_TEMPERATURE',
+        'CNDC': 'GPCTD_CONDUCTIVITY',
+        # todo this is bad because conductivity has different units here
+    },
+    'Seabird Deep SUNA':{},# todo currently no nitrate in NVS OG1
+    'JFE Advantech AROD_FT': {
         'DOXY': 'AROD_FT_DO',
         'TEMPDOXY': 'AROD_FT_TEMP',
     },
-    'Nortek Glider1000 AD2CP Acoustic Doppler Current Profiler': {
+    'RBR coda TODO': {
+        'DOXY': 'LEGATO_CODA_DO',
+        'TEMPDOXY': 'LEGATO_CODA_TEMPERATURE',
+    },
+    'Nortek AD2CP': {
         'AD2CP_HEADING': 'AD2CP_HEADING',
         'AD2CP_ROLL': 'AD2CP_ROLL',
         'AD2CP_PITCH': 'AD2CP_PITCH',
       #  'AD2CP_TIME': 'AD2CP_TIME',
     },
-    'WET Labs {Sea-Bird WETLabs} ECO Puck Triplet FLBBPC scattering fluorescence sensor': {
+    'Wetlabs FLBBPC': {
         'CHLA': 'FLBBPC_CHL_SCALED',
         'FLUOCHLA': 'FLBBPC_CHL_COUNT',
         'PHYCOCYANIN': 'FLBBPC_PC_SCALED',
@@ -76,8 +91,51 @@ sensor_variables = {
         'BBP700': 'FLBBPC_BB_700_SCALED',
         'RBBP700': 'FLBBPC_BB_700_COUNT',
     },
-    'Biospherical Instruments PAR sensor (unspecified model)': {
+    'Wetlabs FLBBPE': {
+        'CHLA': 'FLBBPE_CHL_SCALED',
+        'FLUOCHLA': 'FLBBPE_CHL_COUNT',
+        'PHYC': 'FLBBPC_PE_SCALED',
+        'FLUOPHYC': 'FLBBPC_PE_COUNT',
+        'BBP700': 'FLBBPE_BB_700_SCALED',
+        'RBBP700': 'FLBBPE_BB_700_COUNT',
+    },
+    'Wetlabs FLBBCD': {
+        'CHLA': 'FLBBCD_CHL_SCALED',
+        'FLUOCHLA': 'FLBBCD_CHL_COUNT',
+        'CDOM': 'FLBBCD_CDOM_SCALED',
+        'FLUOCDOM': 'FLBBCD_CDOM_COUNT',
+        'BBP700': 'FLBBCD_BB_700_SCALED',
+        'RBBP700': 'FLBBCD_BB_700_COUNT',
+    },
+    'Wetlabs FLNTU': {
+        'CHLA': 'FLNTU_CHL_SCALED',
+        'FLUOCHLA': 'FLNTU_CHL_COUNT',
+        'TURB': 'FLNTU_NTU_SCALED',
+        #'FLUOTURB': 'FLNTU_NTU_COUNT',
+    },
+    'Biospherical MPE-PAR': {
         'DPAR': 'MPE-PAR_IRRADIANCE',
+    },
+    'RBR Tridente': {
+        'CHLA': 'TRIDENTE_CHLOROPHYLL',
+        'BBP700': 'TRIDENTE_BACKSCATTER',
+        'PHYCOCYANIN': 'TRIDENTE_PHYCOCYANIN',
+    },
+    'SeaBird OCR504': {
+        'ED380': 'OCR504_Ed1',
+        'ED490': 'OCR504_Ed2',
+        'ED532': 'OCR504_Ed3',
+        'DPAR': 'OCR504_Ed4',
+    },
+    'RBR Tridente LEGATO_TRIDENTE_PHYCOCYANIN': {
+        'CHLA': 'TRIDENTE_CHLOROPHYLL',
+        'BBP700': 'TRIDENTE_BACKSCATTER',
+        'PHYCOCYANIN': 'LEGATO_TRIDENTE_PHYCOCYANIN',
+    },
+    'RBR Tridente TRIDENTE_FDOM': {
+        'CHLA': 'TRIDENTE_CHLOROPHYLL',
+        'BBP700': 'TRIDENTE_BACKSCATTER',
+        'PHYCOCYANIN': 'TRIDENTE_FDOM',
     },
 
 }
@@ -86,7 +144,8 @@ def add_variables(devices):
     variables = {}
     variables['timebase'] = {'source': 'NAV_LATITUDE'}
     keep_vars = []
-    devices_to_add = [device['long_name'] for device in devices.values()]
+    devices.pop('altimeter', None)
+    devices_to_add = [device['make_model'] for device in devices.values()]
     devices_to_add.append('SeaExplorer')
     for device_name in devices_to_add:
         if device_name not in sensor_variables.keys():
@@ -135,7 +194,7 @@ def convert_to_og1(yaml_path):
     out['glider_devices'] = og1_devices
 
     # determine variables to add and add them
-    variables = add_variables(og1_devices)
+    variables = add_variables(original_devices)
     out['netcdf_variables'] = variables
 
     # add pilot QC if present
@@ -145,13 +204,21 @@ def convert_to_og1(yaml_path):
     # any special exceptions etc.
 
     with open(yaml_out, "w") as fout:
-        yaml.dump(out, fout)
+        yaml.dump(out, fout, allow_unicode=True)
 
 def convert_all_yaml():
     yaml_files = list(Path("mission_yaml").glob("*.yml"))
     yaml_files.sort()
     for yml in yaml_files:
+        if "OG" in str(yml):
+            continue
+        if "SEA070" in str(yml):
+            print("Skip, we'll come back to this")
+            # todo deal with all the extra sensors on this one
+            continue
+        print(yml)
         convert_to_og1(yml)
 
 if __name__ == '__main__':
+    convert_all_yaml()
     convert_to_og1(Path('mission_yaml/SEA045_M79.yml'))
